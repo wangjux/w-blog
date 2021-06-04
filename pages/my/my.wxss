@@ -1,0 +1,34 @@
+.my_data_cls{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(245, 245, 245);
+}
+.my_data_cls .user_info_cls{
+  width: 100%;
+  height: 150rpx;
+  background-color: white;
+  box-shadow: 2rpx 2rpx 2rpx rgb(168, 168, 168);
+  display: flex;
+  align-items: center;
+}
+.my_data_cls .user_info_cls image{
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+  margin: 10rpx;
+}
+.my_data_cls .user_info_cls text{
+  display: inline-block;
+  width: 200rpx;
+  color: black;
+  font-weight: 600;
+}
+.my_data_cls .user_info_cls view{
+  color: rgb(170, 170, 170);
+  font-size: 24rpx;
+}
+.active-cell:hover{
+  background-color: rgb(209, 209, 209);
+}

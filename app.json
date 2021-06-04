@@ -1,0 +1,42 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/write/write",
+    "pages/index/index",
+    "pages/my/my",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#84C1FF",
+    "navigationBarTitleText": "微blog",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "selectedColor": "#0080FF",
+    "list": [
+      {
+        "iconPath": "image/tabbar/home.png",
+        "selectedIconPath": "image/tabbar/homeactive.png",
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "iconPath": "image/tabbar/write.png",
+        "selectedIconPath": "image/tabbar/writeactive.png",
+        "pagePath": "pages/write/write",
+        "text": "发布"
+      },{
+        "iconPath": "image/tabbar/my.png",
+        "selectedIconPath": "image/tabbar/myactive.png",
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
+  },
+  "useExtendedLib": {
+    "weui":true
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

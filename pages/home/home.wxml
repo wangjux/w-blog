@@ -1,0 +1,29 @@
+<view>
+  <view class="page__bd">
+      <mp-searchbar bindselectresult="selectResult" search="{{search}}"></mp-searchbar>
+  </view>
+  <view>
+    <mp-tabs 
+      tabs="{{tabs}}"
+      activeTab="{{activeTab}}" 
+      swiperClass="weui-tabs-swiper"
+      bindtabclick="onTabClick"
+      bindchange="onChange"
+      activeClass="tab-bar-title__selected"
+      tabClass="tab-class"
+      tab-underline-color="#58ACFA"
+      tab-active-text-color="#58ACFA"
+    >
+    
+      <block wx:for="{{tabs}}" wx:key="title">
+        <view class="tab-content" data-set="{{item}}" slot="tab-content-{{index}}" bind:tap="handleClick">
+          <view wx:if="{{activeTab==0}}">技术开发</view>
+          <view wx:if="{{activeTab==1}}">产品解析</view>
+          <view wx:if="{{activeTab==2}}">运营规范</view>
+          <view wx:if="{{activeTab==3}}">营销经验</view>
+          <view wx:if="{{activeTab==4}}">高校大赛</view>
+        </view>
+      </block>
+    </mp-tabs>
+  </view>
+</view>
